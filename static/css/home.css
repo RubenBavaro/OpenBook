@@ -10,7 +10,7 @@
 
 body {
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -236,26 +236,5 @@ body {
     .view-button,
     .login-button {
         border: 2px solid ButtonText;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #1a1625;
-        --text-color: #e6e0e9;
-        --border-color: #49454f;
-        --button-color: #4a4458;
-        --button-border: #938f99;
-        --focus-outline: #e6e0e9;
-    }
-
-    body {
-        background-color: #1c1b1f;
-    }
-
-    .brand-name,
-    .book-title,
-    .main-heading {
-        color: #e6e0e9;
     }
 }
