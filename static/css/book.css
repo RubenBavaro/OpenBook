@@ -1,0 +1,181 @@
+.book-rental {
+    background-color: #fff;
+    padding: 4rem;
+    min-height: 100vh;
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.type-tag {
+    background-color: #cff7d3;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.rental-button {
+    background-color: #ec221f;
+    border: 1px solid #2c2c2c;
+    color: #fff;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.rental-button:hover {
+    background-color: #d41e1b;
+    color: #fff;
+}
+
+.navigation-buttons {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.nav-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-button:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.nav-button:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+.select-wrapper {
+    position: relative;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.select-wrapper select {
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #212529;
+    pointer-events: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    color: #212529;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.heart-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #ec221f;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 10;
+    padding: 0.5rem;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.book-cover-container {
+    position: relative;
+}
+
+.heart-button:hover {
+    transform: scale(1.2);
+}
+
+.heart-button[aria-pressed="true"] {
+    animation: heartBeat 0.3s ease-in-out;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 991px) {
+    .book-rental {
+        padding: 1rem;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.form-select:focus,
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
+    border-color: #4A90E2;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenBook - Search and explore books">
+    <title>OpenBook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/home.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header-row align-items-center py-4">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center">
+                    <a href="https://www.panettipitagora.edu.it/"><img src="static/img/panetti.png" alt="panetti" class="panetti-image"></a>
+                    <img src="static/img/logo.png" alt="Logo" class="logo-image">
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-2 offset-1">
+                <div class="user-profile d-flex align-items-center justify-content-end">
+                    <img src="static/img/icon.png" alt="User Profile" class="profile-icon" width="46" height="46">
+                    <a href="login.html" id="link">
+                        <button class="login-button ms-2" aria-label="Login">
+                            <span id="User">Accedi</span>
+                            <img src="static/img/Arrow right.png" alt="" width="16" height="16" aria-hidden="true">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <form role="search" class="search-container">
+                    <div class="input-group">
+                        <input type="search"
+                               class="form-control search-input"
+                               placeholder="Cerca titolo, genere, materia"
+                               aria-label="Search books">
+                        <button class="btn search-button" type="submit" aria-label="Search">
+                            <img src="static/img/search.png" alt="" width="48" height="48" aria-hidden="true">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="section-header">
+                    <h2 class="main-heading">Cerca il tuo libro:</h2>
+                    <p class="sub-heading">Esplora i nostri prodotti</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <article class="book-card mb-4">
+                    <div class="d-flex flex-wrap">
+                        <img src="static/img/math.png"
+                             alt="Copertina di Matematica.verde Volume 3"
+                             class="book-cover"
+                             width="160"
+                             height="160">
+                        <div class="book-details ms-4">
+                            <h3 class="book-title">Matematica.verde. Volume 3</h3>
+                            <p class="book-description">Libro di Anna Trifone, Graziella Barozzi e Massimo Bergamini.</p>
+                            <a href="book.html">
+                                <button class="btn view-button" aria-label="View Matematica.verde Volume 3">
+                                    Visualizza
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card mb-4">
+                    <div class="d-flex flex-wrap">
+                        <img src="static/img/gulliver.png"
+                             alt="Copertina di Gulliver's Travels Black Cat"
+                             class="book-cover"
+                             width="160"
+                             height="160">
+                        <div class="book-details ms-4">
+                            <h3 class="book-title">Gulliver's Travels Black Cat</h3>
+                            <p class="book-description">Gulliver's Travels - Jonathan Swift | Letture Graduate - INGLESE - B1.2.</p>
+                            <button class="btn view-button" aria-label="View Gulliver's Travels">
+                                Visualizza
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card mb-4">
+                    <div class="d-flex flex-wrap">
+                        <img src="static/img/computer.png"
+                             alt="Copertina di Computer. Storia dell'informatica"
+                             class="book-cover"
+                             width="160"
+                             height="160">
+                        <div class="book-details ms-4">
+                            <h3 class="book-title">Computer. Storia dell'informatica da Babbage ai nostri giorni</h3>
+                            <p class="book-description">Libro di Martin Campbell-Kelly, Nathan Ensmenger e William Aspray.</p>
+                            <button class="btn view-button" aria-label="View Computer Storia dell'informatica">
+                                Visualizza
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-4">
+            <div class="col-12">
+                <nav aria-label="Page navigation">
+                    <p class="pagination text-center">Page 1 / 3</p>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="static/js/home.js"></script>
+    <script type="text/javascript" src="static/js/login.js"></script>
+</body>
+</html>
